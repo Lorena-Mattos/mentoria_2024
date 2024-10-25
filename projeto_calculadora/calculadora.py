@@ -1,3 +1,6 @@
+import sys
+
+
 class Calculadora:
     def calculo(self):
         operacao = input("Qual operação deseja efetuar (soma, subtração, multiplicação, divisão)? ")
@@ -10,6 +13,8 @@ class Calculadora:
                 resultado = self.soma(num1, num2)
             elif operacao == "divisão":
                 resultado = self.divisao(num1, num2)
+                if resultado is None:  # Se resultado for None, retorne
+                    return None
             elif operacao == "subtração":
                 resultado = self.subtracao(num1, num2)
             elif operacao == "multiplicação":
@@ -27,7 +32,7 @@ class Calculadora:
             return resultado
         else:
             print("Operação desconhecida")
-            return None
+            sys.exit()
 
     def soma(self, a, b):
         return a + b
