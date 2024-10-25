@@ -2,6 +2,10 @@ import pytest
 from worker import Worker
 
 
+# @pytest.mark.worker --> Os custom markers são decorators usados para selecionar quais testes serão executados.
+# Nesse caso, os testes marcados com @pytest.mark.worker serão executados individualmente através do comando pytest
+# -m worker
+
 def test_smoke():
     """ Testing the instance of Worker class """
     worker = Worker()
