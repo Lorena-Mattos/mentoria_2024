@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import MagicMock
-from worker import Worker
+from testes.worker import Worker
 
 
 @pytest.fixture

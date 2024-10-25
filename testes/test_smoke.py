@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import Mock
-from worker import Worker
+from testes.worker import Worker
 
 
 # @pytest.mark.worker --> Os custom markers são decorators usados para selecionar quais testes serão executados.

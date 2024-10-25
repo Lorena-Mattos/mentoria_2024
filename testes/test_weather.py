@@ -1,5 +1,5 @@
 # arquivo test_weather.py
-from weather import get_weather
+from testes.weather import get_weather
 
 
 def test_get_weather(mocker):

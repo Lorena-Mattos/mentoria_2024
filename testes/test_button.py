@@ -1,5 +1,5 @@
 # testes/test_project.py
-from button import Button
+from testes.button import Button
 
 
 def test_button_activation():
