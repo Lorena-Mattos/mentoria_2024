@@ -1,0 +1,3 @@
+testes/.venv
+testes/__pycache__/
+testes/.pytest_cache/
